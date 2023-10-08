@@ -30,4 +30,17 @@ public class Inf {
         cleanner = sc.nextLine();
         System.out.println("the data is: " + data);
     }
+
+    public void chooseC(int n)
+    {
+        switch (n)
+        {
+            case 1:  enterData();break;
+            case 2:  updateData();break;
+            case 3:  displayData();break;
+            case 4:   ;break;
+            default:  ;break;
+
+        }
+    }
 }
