@@ -2,10 +2,22 @@ package pkg;
 import java.util.Scanner;
 public class Inf {
     private String employeeName;
+    private String clean;
     private long mobileNumber;
     private String address;
     private String maritalStatus;
     private String DoB;
+
+    public Inf() {
+
+    }
+//    public Inf(String employeeName, long mobileNumber, String address, String maritalStatus, String doB) {
+//        this.employeeName = employeeName;
+//        this.mobileNumber = mobileNumber;
+//        this.address = address;
+//        this.maritalStatus = maritalStatus;
+//        DoB = doB;
+//    }
 
     public void acceptC(){
         Scanner sc =new Scanner(System.in);
@@ -13,6 +25,7 @@ public class Inf {
         employeeName = sc.nextLine();
         System.out.println("please input the employee's mobile number: ");
         mobileNumber = sc.nextLong();
+        clean = sc.nextLine();
         System.out.println("please input the employee's address: ");
         address = sc.nextLine();
         System.out.println("please input the employee's marital status: ");
